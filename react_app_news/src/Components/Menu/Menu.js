@@ -1,31 +1,21 @@
 import React from 'react';
-import { bool } from 'prop-types'; 
+import {Link} from 'react-router-dom'
 import { StyledMenu } from './Menu.styled'; 
 
 
-const Menu = ({ open, ...props}) => {
-    const isHidden = open ? true : false; 
-    const tabIndex = isHidden ? 0 : -1; 
+const Menu = ({ open}) => {
+    const isHidden = open ? "open" : "closed"; 
+     //const tabIndex = isHidden ? 0 : -1; 
 
   return (
-    <StyledMenu open={open} aria-hidden={!isHidden}{...props}>
-      <a href="/" tabIndex={tabIndex}>
-        <span aria-hidden="true">top story</span>
-        Top story
-      </a>
-      <a href="/" tabIndex={tabIndex}>
-        <span aria-hidden="true">Second Story</span>
-        Second Story 
-        </a>
-      <a href="/" tabIndex={tabIndex}>
-        <span aria-hidden="true">Story Three</span>
-        Also Important
-        </a>
+    <StyledMenu open={open}>
+      <Link to="/" >Top Story</Link>
+    
+      <Link to="second" > Second Story</Link> 
+        
+      <Link to="third" >Also Important</Link>
     </StyledMenu>
   )
 }
 
-Menu.propTypes = {
-    open: bool.isRequired, 
-}
 export default Menu;
