@@ -1,0 +1,9 @@
+//this is what I'll need: 
+
+// 1. broswer router in index.js 
+// props are set to data for now 
+// 2. try importing some api elements from nyt 
+//3. what routes you will need: 
+//* home js 
+//* for now article.js
+// I like creating a hamburger menu 
