@@ -11,8 +11,8 @@ const [article, setArticle] = useState([])
 useEffect(() => {
 fetch (URL)
     .then((response)=> response.json())
-    .then((nytApi) => console.log(nytApi))
-
+    //.then((nytApi) => console.log(nytApi.results[0].title))
+    .then((nytApi) => setArticle(nytApi.results))
   
 }, [])
  
@@ -22,7 +22,7 @@ fetch (URL)
     <BurgerMenu />
     {/* <Articles loading={loading} articles={articles}/> */}
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Articles props={article}/>} />
       <Route path="/second" element={<Second />} />
       <Route path="/third" element={<Third />} />
     </Routes> 
