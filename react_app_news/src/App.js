@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import {Home, Second, Third, Articles, Article} from './pages'; 
 import {Routes, Route} from 'react-router-dom'; 
 import { BurgerMenu } from "./BurgerMenu"
+import './App.css'; 
 //import axios from 'axios'; 
 
 function App() {

@@ -22,8 +22,8 @@ export function BurgerMenu() {
                 <Burger open={open} setOpen={setOpen}/>
                 <Menu open={open} setOpen={setOpen} id={menuId}/>
                 </div>
-              <div>
-                      <img src="http://placekitten.com/900/600"/>
+              <div className="navBar">
+                      <h1>News website test</h1>
               </div>
               
                 
