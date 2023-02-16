@@ -24,8 +24,6 @@ export function BurgerMenu() {
                 </div>
               <div>
                       <img src="http://placekitten.com/900/600"/>
-                      <h1>hi, news app by joe</h1>
-                      <small>top stories</small>
               </div>
               
                 

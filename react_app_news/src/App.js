@@ -23,6 +23,7 @@ fetch (URL)
     {/* <Articles loading={loading} articles={articles}/> */}
     <Routes>
       <Route path="/" element={<Articles props={article}/>} />
+      <Route path="/home" element={<Home props={article}/>} />
       <Route path="/second" element={<Second />} />
       <Route path="/third" element={<Third />} />
       <Route path="article/:articleId" element={<Article />}/>
