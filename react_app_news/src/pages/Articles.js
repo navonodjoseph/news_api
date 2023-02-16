@@ -3,7 +3,7 @@ import Home from './Home'
 import { Link } from 'react-router-dom'; 
 
 export default function Articles ( props ){
-//console.log(props.props[0].media[0]['media-metadata']) 
+//console.log(props.props[0].media["media-metadata"][0][2]["url"]) 
 let story = props.props.map(({title, id, geo_facet, byline, published_date, media, source, type}) => {
     return (
         <div className="homePage">
@@ -20,7 +20,7 @@ let story = props.props.map(({title, id, geo_facet, byline, published_date, medi
                 }}>
             <div>
                 <ul>
-                    {/* <img src={media[0]['media-metadata'][2].url} /> */}
+                    {/* <img src={media['media-metadata'][2].url} />  */}
                     <img src={media['media-metadata']}/>
                     <li>{title}</li>
                 </ul>

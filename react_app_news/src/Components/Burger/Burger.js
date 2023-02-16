@@ -5,10 +5,10 @@ import { StyledBurger} from './Burger.styled';
 const Burger = ({ open, setOpen, ...props }) => {
     const isExpanded = open ? true : false; 
     return (
-        <StyledBurger open={open} onClick={()=> setOpen(true)}>
-        <div />
-        <div />
-        <div />
+        <StyledBurger open={open} onClick={()=> setOpen(!open)}>
+        <span />
+        <span />
+        <span />
         </StyledBurger>
     )
 }

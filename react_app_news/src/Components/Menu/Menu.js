@@ -9,7 +9,7 @@ const Menu = ({ open}) => {
 
   return (
     <StyledMenu open={open}>
-      <Link to="/" >Top Stories</Link>
+      <Link to="/" >Most Viewed</Link>
     
       <Link to="second" > Search</Link> 
         
