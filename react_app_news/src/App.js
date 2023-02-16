@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {Home, Second, Third, Articles} from './pages'; 
+import {Home, Second, Third, Articles, Article} from './pages'; 
 import {Routes, Route} from 'react-router-dom'; 
 import { BurgerMenu } from "./BurgerMenu"
 //import axios from 'axios'; 
@@ -25,6 +25,7 @@ fetch (URL)
       <Route path="/" element={<Articles props={article}/>} />
       <Route path="/second" element={<Second />} />
       <Route path="/third" element={<Third />} />
+      <Route path="article/:articleId" element={<Article />}/>
     </Routes> 
  </div>
   );
