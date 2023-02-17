@@ -1,10 +1,11 @@
 import React from 'react'; 
 import Home from './Home'
 import TopStory from './TopStory'
+import ImageFormat from './ImageFormat';
 import { Link } from 'react-router-dom'; 
 
 export default function Articles ( props ){
-//console.log(props.props[0])
+console.log(props.props)
 
 let story = props.props.map(({ abstract, title, id, geo_facet, byline, published_date, media, source, type, des_facet}) => {
     return (
@@ -23,10 +24,18 @@ let story = props.props.map(({ abstract, title, id, geo_facet, byline, published
                 des_facet: des_facet
                 }}>
             <div className="card">
-                
-                    {/* <img src={media['media-metadata'][2].url} />  */}
-                    {title}
-                    <h2>image goes here</h2>
+                {title}
+                {media && media[0] && media[0]['media-metadata'] && 
+                <ImageFormat 
+                className={media} 
+                component="img" 
+                src={media[0]['media-metadata'][2]?.url 
+                ? `${media[0]['media-metadata'][2].url}` 
+                : 'https://upload.wikimedia.org/wikipedia/commons/e/e0/Red_Exclamation_Dot.png'
+                    }
+                />    
+            }
+                    
                     <div className="facet">
                     {des_facet}
                     </div>
@@ -38,8 +47,10 @@ let story = props.props.map(({ abstract, title, id, geo_facet, byline, published
     })
     return (
         <div className="test">
-            <TopStory/> 
-            {story[0]}
+            <div className="lede">
+                <TopStory/> 
+                {story[0]}
+            </div>
             <Home />
             <div className="alsoPopular">
             {story[1]}

@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom'
 export default function Article (props){
 
     let location = useLocation (); 
-    console.log("location", location); 
+    //console.log("location", location); 
     return (
         <div className ="article">
             <img src={location.state.media['media-metadata'][2].url}/> 
