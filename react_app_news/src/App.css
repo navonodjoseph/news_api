@@ -25,7 +25,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #0b0b0b;
 }
 
 @keyframes App-logo-spin {
@@ -43,10 +43,42 @@
   height: 100px; 
   text-align: right;
   padding: 25px; 
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .homePage{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Courier New', Courier, monospace;
   font-weight: 500;
   color: #282c34;
 }
+ body{
+  background-color: #E1DCDA;
+  font-family: 'Courier New', Courier, monospace;
+ }
+ .test{
+  color: black; 
+  margin: -15px, 0, 0, 100px; 
+  padding: 50px; 
+ }
+ .alsoPopular{
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 10px; 
+ }
+ .homePage{
+  text-decoration: none;
+  color: black; 
+ }
+ .homePage:hover{
+  color: gray; 
+ }
+ .card{
+  width: 300px; 
+  height: 400px; 
+  position: relative; 
+  overflow: hidden;  
+ }
+ a{
+  color: black; 
+  text-decoration: none;
+ }

@@ -4,27 +4,24 @@ export const StyledMenu = styled.nav`
 display: flex; 
 flex-direction: column; 
 justify-content: center;
-background: #E0DAD8; 
-transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
+background: black;
+transform: ${({open}) => open ? 'translateX(0)' : 'translateX(-100%)'};
 height: 100vh; 
 text-align: left; 
 padding: 2rem; 
 position: absolute; 
 top: 0; 
 left: 0; 
-transition: transform 0.3s ease-in-out; 
-
-@media (max-widthL ${({ theme}) => theme.mobile}){
-  width: 100%;   
+transition: transform 0.3s ease-in-out;  
 }
 
 a{
     font-size: 2rem; 
     text-transformation: uppercase;
-    padding: 2rem 0; 
+    padding: 1rem 0; 
     font-weight: bold; 
     letter-spacing: 0.5rem; 
-    color: ${({theme }) => theme.primaryDark}; 
+    color: white; 
     text-decoration: none; 
     transition: color 0.3s linear; 
 
@@ -34,7 +31,7 @@ a{
     }
 
     &:hover{
-        color: ${({ theme}) => theme.primaryHover}; 
+        color: white; 
     }
 }
 `

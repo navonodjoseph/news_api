@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {Home, Second, Third, Articles, Article} from './pages'; 
+import {Home, Second, Third, Articles, Article, TopStory} from './pages'; 
 import {Routes, Route} from 'react-router-dom'; 
 import { BurgerMenu } from "./BurgerMenu"
 import './App.css'; 
@@ -24,6 +24,7 @@ fetch (URL)
     {/* <Articles loading={loading} articles={articles}/> */}
     <Routes>
       <Route path="/" element={<Articles props={article}/>} />
+      <Route path="/:topStory" element={<TopStory props={article}/>} />
       <Route path="/home" element={<Home props={article}/>} />
       <Route path="/second" element={<Second />} />
       <Route path="/third" element={<Third />} />
