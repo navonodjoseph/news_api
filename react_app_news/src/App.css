@@ -56,18 +56,20 @@
   font-family: 'Courier New', Courier, monospace;
  }
  .test{
-  color: black; 
-  margin: -15px, 0, 0, 100px; 
+  color: black;  
   padding: 50px; 
+  border-radius: .2rem;
  }
  .alsoPopular{
   display: flex; 
   flex-wrap: wrap; 
-  gap: 30px; 
+  gap: 10px; 
  }
  .homePage{
   text-decoration: none;
   color: black; 
+  height: 350px; 
+  width: 500px;
  }
  .homePage:hover{
   color: gray; 
@@ -77,8 +79,14 @@
   height: 600px; 
   position: relative; 
   overflow: hidden;  
+  font-size: 18px;
+  font-weight: 600;
  }
  a{
   color: black; 
   text-decoration: none;
+ }
+ .link{
+  height: 425px;
+  width: 625px; 
  }

@@ -36,9 +36,6 @@ let story = props.props.map(({ abstract, title, id, geo_facet, byline, published
                 />    
             }
                     
-                    <div className="facet">
-                    {des_facet}
-                    </div>
             </div>    
         </Link> 
         </ div>
