@@ -17,6 +17,11 @@ The NYT API is very roubust but often imcomplete. Datasets are occasionally miss
 ## Getting started
 The first step was creating a static app that had UI functionality. React Router is still new to me, so I had to figure out a way isolate React components and get them to work in tandem. I found that I often preferred to build a component first in the App.js file then move it to its own component page once I was sure it worked. 
 
-### Hamburger menu
+### Building a minimum viable product
+As a software engineering student, I'm working quickly and learning a lot on the fly. 
 
+#### Hamburger Menu
+Setting out, I decided that I needed build a very basic website that had a hamburger menu and grid-style homepage. One of the first chanllenges was creating a hamburger menu that transitioned the way I needed it to. I had never built a hamburger menu, but I learned quickly how to build a sliding menu in CSS. I managed to do this by studying other websites that did this and working through sandbox tutorials online. The end result is a menu deploys a simple animation effect of sliding open. When open the hamburger menu transforms into a "X". I'm happy with how clean and effective this looks. 
 
+#### Inconsistent Data
+Once I built a static website, I need to fetch the 'top stories' API. I quickly learned that my website would break if even one dataset was missing a media asset. In order to  
