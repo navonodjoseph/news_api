@@ -4,7 +4,7 @@ A basic news app created with JavaScript, React Router, and the New York Times '
 ## Description 
 A news app that populates with the most viewed stories on nytimes.com. My app features a dashboard that automatically populates the most viewed stories into a simple grid. This website filters from a large dataset to present the top 6 stories online right now. It also includes a hamburger menu which gives the app more of a news website feel and could allow for additional API or other external database features down the road. 
 
-## Why I choose this project
+## Why I picked this project
 I'm now midway through my Software Engineering course at General Assembly, and I wanted to work with an API that was both large and constantly changing. I choose the New York Times' API because it fullfills both of those requirements. It's also well-documented. 
 
 I also wanted this to be a starting point. Eventually, I would like to add additional features like "search" and RSS feeds that improve the app's overall user experience. 
