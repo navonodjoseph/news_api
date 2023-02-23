@@ -41,7 +41,7 @@ Once I built a static website, I need to fetch the 'top stories' API. I learned 
                 />    
             }
 ```
-#### Too much data
+#### Managing data
 The top stories API is a database with the top 20 most viewed stories online. That was simply too much to display on my website. I felt that the app was best when it was limited to a smaller number of stories. Because I had a good sense of what the data looked like, I was able to filter the dataset down to a smaller number. Now the website includes a featured story ('leading article') and then a grid containing the next six most popular stories. 
 
 ### Next steps
