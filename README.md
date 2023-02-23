@@ -23,5 +23,24 @@ As a software engineering student, I'm working quickly and learning a lot on the
 #### Hamburger Menu
 Setting out, I decided that I needed build a very basic website that had a hamburger menu and grid-style homepage. One of the first chanllenges was creating a hamburger menu that transitioned the way I needed it to. I had never built a hamburger menu, but I learned quickly how to build a sliding menu in CSS. I managed to do this by studying other websites that did this and working through sandbox tutorials online. The end result is a menu deploys a simple animation effect of sliding open. When open the hamburger menu transforms into a "X". I'm happy with how clean and effective this looks. 
 
+![image](https://user-images.githubusercontent.com/117052152/220958035-18638d87-4703-47dd-b04f-099990423a2b.png)
+
+
+
 #### Inconsistent Data
-Once I built a static website, I need to fetch the 'top stories' API. I quickly learned that my website would break if even one dataset was missing a media asset. In order to  
+Once I built a static website, I need to fetch the 'top stories' API. I learned my website would break if even one dataset was missing a media asset. To solve this, I build a 'default mode' using a ternary operator that displays a preloaded image in the event the dataset does not include a media asset. 
+
+```
+ <div className="card">
+                {title}
+                {media && media[0] && media[0]['media-metadata'] && 
+                <ImageFormat 
+                className={media} 
+                component="img" 
+                src={media[0]['media-metadata'][2]?.url 
+                ? `${media[0]['media-metadata'][2].url}` 
+                : 'https://upload.wikimedia.org/wikipedia/commons/e/e0/Red_Exclamation_Dot.png'
+                    }
+                />    
+            }
+```
