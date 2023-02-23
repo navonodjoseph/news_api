@@ -47,5 +47,5 @@ The top stories API is a database with the top 20 most viewed stories online. Th
 ### Next steps
 There is still a lot of potential for this project. Here's where I could take this next: 
 * A search feature that would let you search the NYT database. 
-* NYT's very large RSS library to build out pages that fetches all stories related to a single topic like soccer or finance. 
+* RSS library to build out category pages
 * Using Axios 
