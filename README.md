@@ -23,9 +23,6 @@ As a software engineering student, I'm working quickly and learning a lot on the
 #### Hamburger Menu
 Setting out, I decided that I needed build a very basic website that had a hamburger menu and grid-style homepage. One of the first chanllenges was creating a hamburger menu that transitioned the way I needed it to. I had never built a hamburger menu, but I learned quickly how to build a sliding menu in CSS. I managed to do this by studying other websites that did this and working through sandbox tutorials online. The end result is a menu deploys a simple animation effect of sliding open. When open the hamburger menu transforms into a "X". I'm happy with how clean and effective this looks. 
 
-![image](https://user-images.githubusercontent.com/117052152/220958035-18638d87-4703-47dd-b04f-099990423a2b.png)
-
-
 
 #### Inconsistent Data
 Once I built a static website, I need to fetch the 'top stories' API. I learned my website would break if even one dataset was missing a media asset. To solve this, I build a 'default mode' using a ternary operator that displays a preloaded image in the event the dataset does not include a media asset. 
@@ -48,4 +45,7 @@ Once I built a static website, I need to fetch the 'top stories' API. I learned 
 The top stories API is a database with the top 20 most viewed stories online. That was simply too much to display on my website. I felt that the app was best when it was limited to a smaller number of stories. Because I had a good sense of what the data looked like, I was able to filter the dataset down to a smaller number. Now the website includes a featured story ('leading article') and then a grid containing the next six most popular stories. 
 
 ### Next steps
-There is still a lot that can be done to improve this app. I'd like to build in a search feature that would let you search the NYT database. I'm also interested in experimenting with the NYT's very large RSS library to see if I could include a page that fetches all stories related to a single topic like soccer or finance. 
+There is still a lot of potential for this project. Here's where I could take this next: 
+* A search feature that would let you search the NYT database. 
+* NYT's very large RSS library to build out pages that fetches all stories related to a single topic like soccer or finance. 
+* Using Axios 
