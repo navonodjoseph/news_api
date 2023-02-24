@@ -1,6 +1,6 @@
 {
-  "homepage": "https://navonodjoseph.github.io/news_api/",
   "name": "react_app_news",
+  "homepage": "https://navonodjoseph.github.io/news_api/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
