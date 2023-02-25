@@ -12,7 +12,7 @@ I also wanted this to be a starting point. Eventually, I would like to add addit
 ## What I learned
 I learned how to work with complex and large databases and render them in React. I now have a really good understanding of how to approach projects like this one and how small UI elements like a hamburger menu can make a website easy to navigate. 
 
-The NYT API is very roubust but often imcomplete. Datasets are occasionally missing components like media assets or tags. This allowed me to consider ways of building a default mode that I can rely on to populate my app when the data is incomplete. 
+The NYT API is very roubust but often incomplete. Datasets are occasionally missing components like media assets or tags. This allowed me to consider ways of building a default mode that I can rely on to populate my app when the data is incomplete. 
 
 ## Getting started
 The first step was creating a static app that had UI functionality. React Router is still new to me, so I had to figure out a way isolate React components and get them to work in tandem. I found that I often preferred to build a component first in the App.js file then move it to its own component page once I was sure it worked. 
