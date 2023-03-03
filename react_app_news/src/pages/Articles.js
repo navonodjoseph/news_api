@@ -23,8 +23,11 @@ let story = props.props.map(({ abstract, title, id, geo_facet, byline, published
                 media: media[0], 
                 des_facet: des_facet
                 }}>
+           
             <div className="card">
+                <div className="title">
                 {title}
+                </div>
                 {media && media[0] && media[0]['media-metadata'] && 
                 <ImageFormat 
                 className={media} 
@@ -36,27 +39,24 @@ let story = props.props.map(({ abstract, title, id, geo_facet, byline, published
                 />    
             }
                     
-            </div>    
+            </div>  
         </Link> 
         </ div>
     </div>
     )
     })
     return (
-        <div className="test">
+        <div className="container">
             <div className="lede">
                 <TopStory/> 
                 {story[0]}
             </div>
-            <Home />
-            <div className="alsoPopular">
-            {story[1]}
-            {story[2]}
-            {story[3]}
-            {story[4]}
-            {story[5]}
-            {story[6]}
-            </div>
+           
+            <div className="storyTwo"> {story[1]}</div>
+            <div className='storyThree'>{story[2]}</div>
+            <div className='storyFour'>{story[3]}</div>
+            <div className='storyFive'>{story[4]}</div>
+            <div className='storySix'>{story[5]}</div>
         </div>
      )
 }

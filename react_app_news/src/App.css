@@ -55,33 +55,79 @@
   background-color: #E1DCDA;
   font-family: 'Courier New', Courier, monospace;
  }
- .test{
-  color: black;  
-  padding: 50px; 
-  border-radius: .2rem;
- }
- .alsoPopular{
-  display: flex; 
-  flex-wrap: wrap; 
-  gap: 10px; 
- }
- .homePage{
-  text-decoration: none;
-  color: black; 
-  height: 350px; 
-  width: 500px;
- }
- .homePage:hover{
-  color: gray; 
- }
- .card{
-  width: 400px; 
-  height: 600px; 
-  position: relative; 
-  overflow: hidden;  
+.container{
+  display: grid; 
+  grid-template-columns: [first] 400px [second] 400px [third] 400px; 
+  grid-template-rows: [row1] 350px [row2] 350px [row3] 350px; 
+  column-gap: 25px; 
+  row-gap: 40px; 
+  margin: 10px;  
+  padding: 40px; 
+}
+.lede{
+  grid-column-start: first; 
+  grid-column-end: span 2;
+  grid-row-start: row1;
+  grid-row-end: span 2;
+  background-color: darkgray;
+}
+.mainPageImg{
+height: 400px;
+width: 600px;
+background-color: #EC8873;  
+}
+.title{
+  padding: 10px;
+  background-color: #E8E963;
   font-size: 18px;
-  font-weight: 600;
- }
+  inline-size: 400px; 
+  overflow-wrap: break-word;  
+}
+.storyTwo{
+grid-column-start: third;
+grid-column-end: span 1;
+grid-row-start: row1;
+grid-row-end: span 1; 
+position: relative; 
+overflow: hidden;  
+font-size: 16px;
+}
+.storyThree{
+grid-column-start: third;
+grid-column-end: span 1;
+grid-row-start: row2;
+grid-row-end: span 1;
+position: relative; 
+overflow: hidden; 
+}
+
+.storyFour{
+grid-column-start: 1;
+grid-column-end: span 1;
+grid-row-start: row3;
+grid-row-end: span 1;
+position: relative; 
+overflow: hidden; 
+}
+
+.storyFive{
+  grid-column-start: 2;
+  grid-column-end: span 1;
+  grid-row-start: row3;
+  grid-row-end: span 1;
+  position: relative; 
+  overflow: hidden; 
+  }
+
+  .storySix{
+    grid-column-start: 3;
+    grid-column-end: span 1;
+    grid-row-start: row3;
+    grid-row-end: span 1;
+    position: relative; 
+    overflow: hidden; 
+    }
+
  a{
   color: black; 
   text-decoration: none;
