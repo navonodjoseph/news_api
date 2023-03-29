@@ -23,7 +23,7 @@ export function BurgerMenu() {
                 <Menu open={open} setOpen={setOpen} id={menuId}/>
                 </div>
               <div className="navBar">
-                      <h1>News in three sentences</h1>
+                      <h1>NEWS API PROJECT</h1>
               </div>
               
                 

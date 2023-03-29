@@ -1,7 +1,7 @@
 export default function Third() {
     return (
         <div>
-            <h1>About</h1>
+            <h1>International News headlines</h1>
         </div>
     )
 }

@@ -5,6 +5,7 @@ import Articles from "./Articles"
 import Article from "./Article"
 import TopStory from "./TopStory";
 import ImageFormat from "./ImageFormat";
+import Sport from "./Sport";
 
 export{
     Article,
@@ -13,5 +14,6 @@ export{
     Home, 
     Third, 
     TopStory, 
-    ImageFormat
+    ImageFormat,
+    Sport
 }

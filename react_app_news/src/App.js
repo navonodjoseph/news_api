@@ -2,9 +2,12 @@ import React, { useEffect, useState } from 'react'
 import {Home, Second, Third, Articles, Article, TopStory} from './pages'; 
 import {Routes, Route} from 'react-router-dom'; 
 import { BurgerMenu } from "./BurgerMenu"
+// import env from "dotenv"
 import './App.css'; 
-//import axios from 'axios'; 
 
+//set up connection to env file
+//dotenv.config(); 
+//console.log(process.env); 
 function App() {
 const URL = "https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=BJAmk92ubNxVC9sK7Ca9GjLQjaY3un4a"
 const [article, setArticle] = useState([])  

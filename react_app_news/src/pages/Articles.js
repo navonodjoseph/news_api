@@ -34,7 +34,7 @@ let story = props.props.map(({ abstract, title, id, geo_facet, byline, published
                 component="img" 
                 src={media[0]['media-metadata'][2]?.url 
                 ? `${media[0]['media-metadata'][2].url}` 
-                : 'https://upload.wikimedia.org/wikipedia/commons/e/e0/Red_Exclamation_Dot.png'
+                : 'http://placekitten.com/300/300'
                     }
                 />    
             }
