@@ -1,5 +1,5 @@
 # A 'Most Viewed' News API  
-A basic news app created with JavaScript, React Router, and the New York Times 'Most Viewed' API.  
+A basic news app created with JavaScript, React Router, and the New York Times 'Most Viewed' API. View here: https://navonodjoseph.github.io/news_api/ 
 
 ## Description 
 A news app that populates with the most viewed stories on nytimes.com. My app features a dashboard that automatically populates the most viewed stories into a simple grid. This website filters from a large dataset to present the top 6 stories online right now. It also includes a hamburger menu which gives the app more of a news website feel and could allow for additional API or other external database features down the road. 
